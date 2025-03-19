@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import "./NEWSRighT.css";
+import "./NEWS_left.css";
 
-function NEWSRighT({ className = "" }) {
+function NEWS_left({ className = "" }) {
   return (
       <div className={`news-right ${className}`}>
           <div className="news-item">
               <div className="news-content">
                   <a className="news">
-                      NEWS
+                      NEWSwwdd
                   </a>
 
                   <div className="news-line" />
@@ -38,8 +38,8 @@ function NEWSRighT({ className = "" }) {
   );
 }
 
-NEWSRighT.propTypes = {
+NEWS_left.propTypes = {
   className: PropTypes.string,
 };
 
-export default NEWSRighT;
+export default NEWS_left;

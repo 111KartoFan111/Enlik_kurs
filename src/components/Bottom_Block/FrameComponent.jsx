@@ -127,7 +127,7 @@ function FrameComponent({ className = "" }) {
                       <div className="second-nested-news-elements">
                           <div className="title5">
                               <h2 className="news">
-                                  NEWS
+                                  NEss
                               </h2>
 
                               <div className="news-line6" />

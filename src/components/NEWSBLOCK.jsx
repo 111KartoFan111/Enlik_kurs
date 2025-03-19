@@ -16,7 +16,7 @@ function NEWSBLOCK({ className = "", newsVector }) {
           </h1>
 
           <b className="by-ismagulov-z1">
-              BY ISMAGULOV Z. MARATULY
+              BY ISMAGULOV Z. MARATULYss
           </b>
 
           <h3 className="buy-new-car1">

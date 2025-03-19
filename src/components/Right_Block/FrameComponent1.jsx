@@ -1,7 +1,7 @@
-import NEWSRighT from "./NEWSRighT";
-import LISTEN from "./Listen/LISTEN";
-import Main from "./Main";
-import LISTEN1 from "./Listen/LISTEN1";
+import NEWSRighT from "../Left_Block/NEWS_left";
+import LISTEN from "../Listen/LISTEN";
+import Main from "../Main";
+import LISTEN1 from "../Listen/LISTEN1";
 import PropTypes from "prop-types";
 import "./FrameComponent1.css";
 
@@ -24,7 +24,7 @@ function FrameComponent1({ className = "" }) {
                       <div className="side-news-content">
                           <div className="side-news-header">
                               <h2 className="news7">
-                                  NEWS
+                                  NEWssssS
                               </h2>
 
                               <div className="news-line1" />

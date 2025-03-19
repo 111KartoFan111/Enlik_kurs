@@ -2,8 +2,8 @@ import { useState } from "react";
 import Component1 from "../components/Header";
 import FOOTERBUT from "../components/Footer/Footer_but";
 import CLOSEBUT from "../components/Footer/Close_But";
-import FrameComponent1 from "../components/FrameComponent1";
-import SocialMedia from "../components/SocialMedia";
+import FrameComponent1 from "../components/Right_Block/FrameComponent1";
+import Subscribe from "../components/Subscribe";
 import RevolutionBanner from "../components/RevolutionBanner";
 import Sidebar from "../components/Footer/Sidebar";
 import "./Desktop.css";
@@ -30,7 +30,7 @@ function Desktop() {
 
       <main className="frame-parent">
         <FrameComponent1 />
-        <SocialMedia />
+        <Subscribe />
         <RevolutionBanner />
       </main>
     </div>

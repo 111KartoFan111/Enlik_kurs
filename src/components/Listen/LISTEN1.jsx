@@ -19,7 +19,7 @@ function LISTEN1({ className = "" }) {
           <div className="side-listen-content">
               <div className="side-podcast">
                   <div className="rootless">
-                      Rootless
+                      s
                   </div>
 
                   <div className="can-orthodox-judaism">

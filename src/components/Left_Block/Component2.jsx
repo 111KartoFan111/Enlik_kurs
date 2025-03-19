@@ -16,7 +16,7 @@ function Component2({ className = "" }) {
               </div>
               <div className="first-news-author flex-container">
                 <h1 className="news-title text-base">Kairat Nurtas</h1>
-                <b className="news-author text-base">BY ISMAGULOV Z. MARATULY</b>
+                <b className="news-author text-base">BY IsOV Z. MARATULY</b>
               </div>
             </div>
           </div>

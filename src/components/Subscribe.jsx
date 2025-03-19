@@ -3,6 +3,7 @@ import "./Subscribe.css";
 
 function Subscribe({ className = "" }) {
   return (
+    <div className={`social-media ${className}`}>
       <div className={`subscribe ${className}`}>
           <div className="subscribe-rectangle">
 
@@ -16,6 +17,7 @@ function Subscribe({ className = "" }) {
             </div>
             </div>
       </div>
+    </div>
   );
 }
 
