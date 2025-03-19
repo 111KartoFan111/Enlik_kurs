@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import "./CLOSEBUT.css";
+import "./Close_But.css";
 
-function CLOSEBUT({ className = "", onToggle }) {
+function Close_But({ className = "", onToggle }) {
   const [isActive, setIsActive] = useState(false);
   const handleClick = () => {
     const newState = !isActive;
@@ -26,9 +26,9 @@ function CLOSEBUT({ className = "", onToggle }) {
   );
 }
 
-CLOSEBUT.propTypes = {
+Close_but.propTypes = {
   className: PropTypes.string,
   onToggle: PropTypes.func
 };
 
-export default CLOSEBUT;
+export default Close_But;
