@@ -1,12 +1,12 @@
 // pages/Desktop.jsx
 import { useState } from "react";
-import Component1 from "../components/Component1";
-import FOOTERBUT from "../components/footer/FOOTERBUT";
-import CLOSEBUT from "../components/footer/CLOSEBUT";
+import Component1 from "../components/Header/Component1";
+import FOOTERBUT from "../components/Footer/FOOTERBUT";
+import CLOSEBUT from "../components/Footer/CLOSEBUT";
 import FrameComponent1 from "../components/FrameComponent1";
 import SocialMedia from "../components/SocialMedia";
 import RevolutionBanner from "../components/RevolutionBanner";
-import Sidebar from "../components/footer/Sidebar";
+import Sidebar from "../components/Footer/Sidebar";
 import "./Desktop.css";
 
 function Desktop() {

@@ -1,7 +1,7 @@
 import NEWSRighT from "./NEWSRighT";
-import LISTEN from "./LISTEN";
+import LISTEN from "./Listen/LISTEN";
 import Main from "./Main";
-import LISTEN1 from "./LISTEN1";
+import LISTEN1 from "./Listen/LISTEN1";
 import PropTypes from "prop-types";
 import "./FrameComponent1.css";
 

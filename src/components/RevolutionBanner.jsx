@@ -1,5 +1,5 @@
 import NEWSBLOCK from "./NEWSBLOCK";
-import Collection from "./Collection";
+import Collection from "./Collection/Collection";
 import Component2 from "./Component2";
 import Component3 from "./Component3";
 import Component4 from "./Component4";
