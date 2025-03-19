@@ -1,6 +1,5 @@
-// pages/Desktop.jsx
 import { useState } from "react";
-import Component1 from "../components/Header/Header";
+import Component1 from "../components/Header";
 import FOOTERBUT from "../components/Footer/FOOTERBUT";
 import CLOSEBUT from "../components/Footer/CLOSEBUT";
 import FrameComponent1 from "../components/FrameComponent1";
