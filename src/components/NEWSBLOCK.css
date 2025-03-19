@@ -1,0 +1,84 @@
+.news-vector-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.kairat-nurtas1 {
+  margin: 0;
+  position: absolute;
+  top: 67px;
+  left: 50px;
+  font-size: inherit;
+  line-height: var(--font-size-11xl);
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 179px;
+  height: 30px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.by-ismagulov-z1 {
+  position: absolute;
+  top: 127px;
+  left: 50px;
+  font-size: var(--font-size-sm);
+  line-height: 124.77%;
+  display: inline-block;
+  width: 239px;
+  height: 18px;
+  z-index: 1;
+}
+.buy-new-car1 {
+  margin: 0;
+  position: absolute;
+  top: 102px;
+  left: 50px;
+  font-size: var(--font-size-xl);
+  line-height: var(--font-size-xl);
+  font-weight: 400;
+  font-family: var(--font-graebenbach);
+  color: var(--color-dimgray);
+  display: flex;
+  align-items: flex-end;
+  width: 205px;
+  height: 20px;
+  z-index: 1;
+}
+.news1 {
+  margin: 0;
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  font-size: var(--font-size-5xl);
+  line-height: var(--font-size-5xl);
+  font-weight: 900;
+  font-family: var(--font-graebenbach);
+  display: inline-block;
+  width: 68px;
+  height: 24px;
+  min-width: 68px;
+  z-index: 1;
+}
+.news-line2 {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  border-top: 1px solid var(--color-tomato);
+  box-sizing: border-box;
+  width: 71px;
+  height: 1px;
+  z-index: 1;
+}
+.news-block {
+  height: 194px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-itc-cushing-std);
+}

@@ -1,0 +1,226 @@
+.side-listen-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border: 1.8px solid var(--color-tomato);
+  box-sizing: border-box;
+  z-index: 0;
+}
+.listen-to-tablet1 {
+  margin: 0;
+  height: 30px;
+  width: 174px;
+  position: relative;
+  font-size: inherit;
+  line-height: 124.77%;
+  font-weight: 800;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.side-listen-title-container {
+  width: 173px;
+  height: 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px var(--padding-4xs);
+  box-sizing: border-box;
+  z-index: 1;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-itc-cushing-std);
+}
+.side-listen-separator {
+  height: 1.8px;
+  width: 254.8px;
+  position: relative;
+  border-top: 1.8px dashed var(--color-tomato);
+  box-sizing: border-box;
+}
+.side-listen-separator-wrapper {
+  width: 253px;
+  height: 15.8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px var(--padding-sm);
+  box-sizing: border-box;
+  z-index: 6;
+}
+.rootless {
+  width: 70px;
+  height: 17px;
+  position: relative;
+  line-height: 124.77%;
+  text-transform: uppercase;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.can-orthodox-judaism {
+  width: 218px;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 124.77%;
+  font-weight: 800;
+  font-family: var(--font-itc-cushing-std);
+  display: inline-block;
+  z-index: 1;
+}
+.side-podcast {
+  height: 79px;
+  width: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.side-listen-content {
+  width: 259px;
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-22xl);
+  box-sizing: border-box;
+  z-index: 3;
+}
+.the-iconoclastic-rabbi {
+  width: 228px;
+  position: relative;
+  line-height: 124.77%;
+  display: inline-block;
+}
+.side-podcast-summary {
+  width: 269px;
+  height: 119px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-22xl);
+  box-sizing: border-box;
+  z-index: 4;
+  font-size: var(--font-size-base);
+}
+.february-20-2025 {
+  height: 17px;
+  width: 113px;
+  position: relative;
+  line-height: 124.77%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.side-podcast-date-container {
+  width: 153px;
+  height: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-22xl);
+  box-sizing: border-box;
+}
+.date-separator {
+  width: 254.8px;
+  height: 1.8px;
+  position: relative;
+  border-top: 1.8px dashed var(--color-tomato);
+  box-sizing: border-box;
+}
+.side-podcast-footer {
+  width: 253px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px var(--padding-xs-4);
+  box-sizing: border-box;
+  gap: var(--gap-9xs);
+  z-index: 5;
+}
+.take-one {
+  width: 65px;
+  height: 17px;
+  position: relative;
+  line-height: 124.77%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.sanhedrin-66-and {
+  top: 11px;
+  width: 164px;
+  height: 22px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 124.77%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.sanhedrin-66-and1 {
+  top: 10px;
+  width: 128px;
+  height: 17px;
+  position: relative;
+  line-height: 124.77%;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.february-20-20251 {
+  top: 10px;
+  width: 113px;
+  height: 17px;
+  position: relative;
+  line-height: 124.77%;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.sanhedrin-container {
+  height: 79px;
+  width: 163px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.sanhedrin {
+  width: 203px;
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px var(--padding-21xl);
+  box-sizing: border-box;
+  z-index: 6;
+}
+.listen {
+  width: 298px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-5xs) var(--padding-15xl)
+    var(--padding-2xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-11xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-tomato);
+  font-family: var(--font-graebenbach);
+}
