@@ -140,7 +140,7 @@ function FrameComponent({ className = "" }) {
 
                       <div className="second-nested-description">
                           <h3 className="buy-new-car6">
-                              Buy new car
+                              sss
                           </h3>
                       </div>
 

@@ -3,7 +3,7 @@ import Collection from "./Collection/Collection";
 import Component2 from "./Left_Block/Component2";
 import Component3 from "./Left_Block/Component3";
 import Component4 from "./Right_Block/Component4";
-import FrameComponent from "./FrameComponent";
+import FrameComponent from "./Bottom_Block/FrameComponent";
 import PropTypes from "prop-types";
 import "./RevolutionBanner.css";
 
