@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import "./Component1.css";
+import "./Header.css";
 
-function Component1({ className = "", property1 = "Default" }) {
+function Header({ className = "", property1 = "Default" }) {
   return (
     <header
       className={`header ${className} ${property1 === "Variant2" ? "variant2-style" : ""}`}
@@ -27,11 +27,10 @@ function Component1({ className = "", property1 = "Default" }) {
   );
 }
 
-Component1.propTypes = {
+Header.propTypes = {
   className: PropTypes.string,
 
-  /** Variant props */
-  property1: PropTypes.string, // Ожидаем строку
+  property1: PropTypes.string,
 };
 
-export default Component1;
+export default Header;

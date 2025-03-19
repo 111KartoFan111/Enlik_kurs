@@ -10,7 +10,7 @@ function Component2({ className = "" }) {
             <div className="first-news-details flex-container">
               <div className="first-news-heading flex-container">
                 <div className="title flex-container">
-                  <h2 className="news text-base">NEWS</h2>
+                  <h2 className="news text-base">вв</h2>
                   <div className="news-line" />
                 </div>
               </div>

@@ -9,7 +9,7 @@ function Component3({ className = "" }) {
           <div className="side-image-news-details">
               <div className="title2">
                   <h2 className="news">
-                      NEWS
+                      вфв
                   </h2>
 
                   <div className="news-line5" />
