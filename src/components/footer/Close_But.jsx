@@ -26,7 +26,7 @@ function Close_But({ className = "", onToggle }) {
   );
 }
 
-Close_but.propTypes = {
+Close_But.propTypes = {
   className: PropTypes.string,
   onToggle: PropTypes.func
 };
