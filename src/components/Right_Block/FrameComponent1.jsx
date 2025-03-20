@@ -38,24 +38,24 @@ function FrameComponent1({ className = "" }) {
                       <div className="side-news-content">
                           <div className="side-news-header">
                               <h2 className="news7">
-                                  NEWssssS
+                                  {topNewsItems[0].category}
                               </h2>
 
                               <div className="news-line1" />
                           </div>
 
                           <h1 className="kairat-nurtas6">
-                              Kairat Nurtas
+                              {topNewsItems[0].title}
                           </h1>
                       </div>
 
                       <h3 className="buy-new-car6">
-                          Buy new car
+                          {topNewsItems[0].description}
                       </h3>
                   </div>
 
                   <b className="by-ismagulov-z8">
-                      BY ISMAGULOV Z. MARATULY
+                      BY {topNewsItems[0].author}
                   </b>
 
                   <img
