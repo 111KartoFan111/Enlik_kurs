@@ -65,7 +65,8 @@
 }
 .buy-new-car6 {
   margin: 0;
-  width: 107px;
+  width: 287px;
+  margin-top: 45px;
   height: 25px;
   position: relative;
   font-size: var(--font-size-xl);

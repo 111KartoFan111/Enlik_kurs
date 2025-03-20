@@ -25,6 +25,7 @@ function NEWS_left({ className = "" , newsId}) {
 
           <div className="news-category">
               <h3 className="buy-new-car">
+                {newsItem.description}
               </h3>
           </div>
 
