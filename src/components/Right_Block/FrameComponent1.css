@@ -27,7 +27,7 @@
 .news-line1 {
   width: 71px;
   position: relative;
-  border-top: 1px solid var(--color-tomato);
+  border-top: 3px solid var(--color-tomato);
   box-sizing: border-box;
   height: 1px;
 }
@@ -44,7 +44,7 @@
 }
 .kairat-nurtas6 {
   margin: 0;
-  width: 179px;
+  width: 275px;
   height: 38px;
   position: relative;
   font-size: var(--font-size-11xl);

@@ -16,7 +16,7 @@ function Component2({ className = "", newsId }) {
             <div className="first-news-details flex-container">
               <div className="first-news-heading flex-container">
                 <div className="title flex-container">
-                  <h2 className="news text-base">{newsItem.category}</h2>
+                  <h2 className="news_text-base">{newsItem.category}</h2>
                   <div className="news-line" />
                 </div>
               </div>
@@ -26,7 +26,6 @@ function Component2({ className = "", newsId }) {
               </div>
             </div>
           </div>
-          <img alt="" className="first-news-image" loading="lazy" src={newsItem.imageUrl || "/vector-7.svg"} />
         </div>
       </div>
       <img alt="" className="second-news-image" loading="lazy" src="/vector-8.svg" />

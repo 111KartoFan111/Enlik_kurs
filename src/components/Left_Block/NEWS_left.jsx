@@ -15,7 +15,7 @@ function NEWS_left({ className = "" , newsId}) {
                       {newsItem.category}
                   </a>
 
-                  <div className="news-line" />
+                  <div className="news-lines" />
               </div>
 
               <h1 className="kairat-nurtas">

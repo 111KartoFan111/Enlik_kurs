@@ -261,7 +261,8 @@
 
 .news-line {
   width: 71px;
-  border-top: 1px solid var(--color-tomato);
+  margin-left: 150px;
+  border-top: 3px solid var(--color-tomato);
   box-sizing: border-box;
   height: 1px;
 }
@@ -277,15 +278,18 @@
 
 .news-title {
   margin: 0;
-  width: 199px;
+  width: 349px;
   height: 38px;
   font-size: var(--font-size-11xl);
   font-weight: 700;
   font-family: inherit;
+  padding: 10px 70px;
 }
 
 .news-author {
   width: 199px;
+  padding: 0px 140px;
+  margin-top: 10px;
   height: 17px;
   font-size: var(--font-size-sm);
 }
@@ -326,4 +330,12 @@
   font-family: var(--font-itc-cushing-std);
 }
 
-/* Другие уникальные классы остаются без изменений */
+.news_text-base {
+  margin: 0;
+  width: 68px;
+  height: 24px;
+  font-size: var(--font-size-5xl);
+  font-weight: 900;
+  margin-left: 105px;
+  font-family: inherit;
+}
