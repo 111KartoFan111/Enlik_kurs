@@ -26,9 +26,10 @@ function Component3({ className = "" , newsId}) {
                       {newsItem.title}
                   </h1>
 
-                  <h3 className="buy-new-car2">
+                  <a href="{{newsItem.url}}"><h3 className="buy-new-car2">
                       {newsItem.description}
                   </h3>
+                  </a>
 
                   <b className="by-ismagulov-zx1">
                       BY {newsItem.author}

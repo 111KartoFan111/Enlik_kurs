@@ -1,7 +1,14 @@
 import PropTypes from "prop-types";
 import "./FrameComponent.css";
+import { useNews } from "../../service/NewsContext";
 
-function FrameComponent({ className = "" }) {
+function FrameComponent({ className = "", newsId}) {
+    const { getNewsById } = useNews();
+    const newsItem = getNewsById(newsId);
+    
+    if (!newsItem) return null;
+    
+
   return (
       <div className={`repeated-news-structure-parent ${className}`}>
           <div className="repeated-news-structure">
@@ -11,7 +18,7 @@ function FrameComponent({ className = "" }) {
                           <div className="title3">
                               <div className="nested-news-title-container">
                                   <h2 className="news3">
-                                      NEWS
+                                    {newsItem.category}
 </h2>
                               </div>
 
@@ -21,15 +28,15 @@ function FrameComponent({ className = "" }) {
 
                       <div className="nested-news-author-info">
                           <h1 className="kairat-nurtas5">
-                              Kairat Nurtas
+                              {newsItem.title}
                           </h1>
 
                           <h3 className="description3">
-                              Buy new car
+                              {newsItem.descreption}
                           </h3>
 
                           <b className="by-ismagulov-z4">
-                              BY ISMAGULOV Z. MARATULY
+                              BY {newsItem.author}
                           </b>
                       </div>
                   </div>
@@ -51,7 +58,7 @@ function FrameComponent({ className = "" }) {
                               <div className="third-news-details">
                                   <div className="title3">
                                       <h2 className="news">
-                                      NEWS
+                                        {newsItem.category}
                                   </h2>
 
                                       <div className="news-line6" />
@@ -60,17 +67,17 @@ function FrameComponent({ className = "" }) {
 
                               <div className="third-news-author">
                                   <h1 className="kairat-nurtas6">
-                                      Kairat Nurtas
+                                      {newsItem.title}
                               </h1>
 
                                   <h3 className="description4">
-                                      Buy new car
+                                      {newsItem.descreption}
                               </h3>
                               </div>
                           </div>
 
                           <b className="by-ismagulov-z5">
-                              BY ISMAGULOV Z. MARATULY
+                              BY {newsItem.author}
                           </b>
                       </div>
                   </div>
@@ -91,7 +98,7 @@ function FrameComponent({ className = "" }) {
                   <div className="side-news-container">
                       <div className="title5">
                           <h2 className="news">
-                              NEWS
+                             {newsItem.category}
                           </h2>
 
                           <div className="news-line6" />
@@ -99,17 +106,17 @@ function FrameComponent({ className = "" }) {
 
                       <div className="side-news-names">
                           <h1 className="kairat-nurtas7">
-                              Kairat Nurtas
+                              {newsItem.title}
                           </h1>
 
                           <h3 className="description5">
-                              Buy new car
+                              {newsItem.descreption}
                           </h3>
                       </div>
                   </div>
 
                   <b className="by-ismagulov-z5">
-                      BY ISMAGULOV Z. MARATULY
+                      BY {newsItem.author}
                   </b>
               </div>
           </div>
@@ -127,25 +134,25 @@ function FrameComponent({ className = "" }) {
                       <div className="second-nested-news-elements">
                           <div className="title5">
                               <h2 className="news">
-                                  NEss
+                                {newsItem.category}
                               </h2>
 
                               <div className="news-line6" />
                           </div>
 
                           <h1 className="kairat-nurtas8">
-                              Kairat Nurtas
+                              {newsItem.title}
                           </h1>
                       </div>
 
                       <div className="second-nested-description">
                           <h3 className="description6">
-                              sss
+                              {newsItem.descreption}
                           </h3>
                       </div>
 
                       <b className="by-ismagulov-z5">
-                          BY ISMAGULOV Z. MARATULY
+                          BY {newsItem.author}
                       </b>
                   </div>
               </div>
@@ -156,6 +163,7 @@ function FrameComponent({ className = "" }) {
 
 FrameComponent.propTypes = {
   className: PropTypes.string,
+  newsId: PropTypes.number.isRequired,
 };
 
 export default FrameComponent;

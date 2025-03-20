@@ -1,4 +1,4 @@
-import NEWSRighT from "../Left_Block/NEWS_left";
+import NEWS_left from "../Left_Block/NEWS_left";
 import LISTEN from "../Listen/LISTEN";
 import Main from "../Main";
 import LISTEN1 from "../Listen/LISTEN1";
@@ -18,7 +18,9 @@ function FrameComponent1({ className = "" }) {
       <section className={`news-right-container-parent ${className}`}>
           <div className="news-right-container">
               <div className="news-right-parent">
-                  <NEWSRighT />
+                {topNewsItems.map(item => (
+                    <NEWS_left key={item.id} newsId={item.id} />
+                ))}
 
                   <LISTEN property1="Variant2" />
               </div>

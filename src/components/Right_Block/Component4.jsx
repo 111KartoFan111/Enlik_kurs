@@ -1,7 +1,13 @@
 import PropTypes from "prop-types";
 import "./Component4.css";
+import { useNews } from "../../service/NewsContext";
 
-function Component4({ className = "" }) {
+function Component4({ className = "" , newsId}) {
+    const { getNewsById } = useNews();
+    const newsItem = getNewsById(newsId);
+    
+    if (!newsItem) return null;
+    
   return (
       <div className={`div4 ${className}`}>
           <img
@@ -19,7 +25,7 @@ function Component4({ className = "" }) {
                       <div className="featured-description">
                           <div className="theme">
                               <h2 className="israel-the1">
-                                  ISRAEL & THE MIDDLE FAST
+                              {newsItem.category}
                               </h2>
 
                               <div className="theme-image">
@@ -34,20 +40,19 @@ function Component4({ className = "" }) {
 
                       <div className="featured-title">
                           <h1 className="their-time-is1">
-                              Their Time Is Up
+                            {newsItem.title}
                           </h1>
                       </div>
 
                       <div className="the-murder-of1">
-                          The murder of the Bibas children caps off an 18-month catalog of
-                          horrors that has told us exactly who our Palestinian neighbors
-                          are. Backed by a friend in the White House, Israel must secure its
-                          future through strong unilateral action.
+                          <h3 className="the-murder-of">
+                            {newsItem.description}
+                          </h3>
                       </div>
 
                       <div className="featured-author">
                           <div className="by-liel-leibovitz1">
-                              by Liel Leibovitz
+                              BY {newsItem.author}
                           </div>
                       </div>
                   </div>

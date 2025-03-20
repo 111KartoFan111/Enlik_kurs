@@ -7,7 +7,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "New economic policies show promising results",
         "image": "/vector-5.svg",
-        "featured": true
+        "featured": true,
+        "url": "https://www.google.com"
       },
       {
         "id": 2,
@@ -16,7 +17,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "Popular artist reveals details about upcoming release",
         "image": "/vector-7.svg",
-        "featured": true
+        "featured": true,
+        "url": "https://www.google.com"
       },
       {
         "id": 3,
@@ -25,7 +27,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "Buy new car opportunities expand with local production",
         "image": "/vector-8.svg",
-        "featured": false
+        "featured": false,
+        "url": "https://www.google.com"
       },
       {
         "id": 4,
@@ -34,7 +37,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "How technology is changing industries",
         "image": "/vector-16.svg",
-        "featured": false
+        "featured": false,
+        "url": "https://www.google.com"
       },
       {
         "id": 5,
@@ -43,7 +47,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "Historic achievement for local athletes",
         "image": "/news-vector.svg",
-        "featured": false
+        "featured": false,
+        "url": "https://www.google.com"
       },
       {
         "id": 6,
@@ -52,7 +57,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "Diplomatic efforts yield positive results",
         "image": "/vector-16.svg",
-        "featured": false
+        "featured": false,
+        "url": "https://www.google.com"
       },
       {
         "id": 7,
@@ -61,7 +67,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "State-of-the-art facility opens to the public",
         "image": "/news-vector.svg",
-        "featured": false
+        "featured": false,
+        "url": "https://www.google.com"
       },
       {
         "id": 8,
@@ -70,7 +77,8 @@
         "author": "ISMAGULOV Z. MARATULY",
         "description": "International directors showcase their work",
         "image": "/vector-6.svg",
-        "featured": true
+        "featured": true,
+        "url": "https://www.google.com"
       }
     ],
     "collections": [

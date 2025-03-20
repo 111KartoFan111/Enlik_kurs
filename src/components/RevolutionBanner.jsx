@@ -15,6 +15,8 @@ function RevolutionBanner({ className = "" }) {
 
   const oneNewsItem = news.slice(3, 4);
 
+  const threeNewsItems = news.slice(5, 9);
+
   if (loading) {
     return <div>Loading news content...</div>;
   }
@@ -43,12 +45,16 @@ function RevolutionBanner({ className = "" }) {
               </div>
 
               <div className="main-side-news">
-                <Component4 />
+              {oneNewsItem.map(item => (
+                              <Component4 key={item.id} newsId={item.id} />
+              ))}
               </div>
             </div>
           </div>
 
-          <FrameComponent />
+          {threeNewsItems.map(item => (
+          <FrameComponent key={item.id} newsId={item.id}/>
+          ))}
         </div>
       </div>
     </section>
