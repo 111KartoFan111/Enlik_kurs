@@ -60,7 +60,7 @@
   display: inline-block;
   flex-shrink: 0;
 }
-.buy-new-car3 {
+.description3 {
   margin: 0;
   width: 286px;
   height: 25px;
@@ -169,7 +169,7 @@
   flex-shrink: 0;
   z-index: 2;
 }
-.buy-new-car4 {
+.description4 {
   margin: 0;
   width: 230px;
   height: 25px;
@@ -287,7 +287,7 @@
   display: inline-block;
   flex-shrink: 0;
 }
-.buy-new-car5 {
+.description5 {
   margin: 0;
   width: 230px;
   height: 25px;
@@ -365,7 +365,7 @@
   gap: var(--gap-mini);
   z-index: 2;
 }
-.buy-new-car6 {
+.description6 {
   margin: 0;
   height: 25px;
   width: 230px;

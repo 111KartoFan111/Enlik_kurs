@@ -4,8 +4,16 @@ import Main from "../Main";
 import LISTEN1 from "../Listen/LISTEN1";
 import PropTypes from "prop-types";
 import "./FrameComponent1.css";
+import { useNews } from "../../service/NewsContext";
 
 function FrameComponent1({ className = "" }) {
+    const { loading, news } = useNews();
+
+    const topNewsItems = news.slice(0, 1);
+
+    if (loading) {
+      return <div>Loading news content...</div>;
+    }
   return (
       <section className={`news-right-container-parent ${className}`}>
           <div className="news-right-container">
@@ -16,7 +24,11 @@ function FrameComponent1({ className = "" }) {
               </div>
           </div>
 
-          <Main />
+        {topNewsItems.map(item => (
+            <Main  key={item.id} newsId={item.id} />
+        ))}
+
+
 
           <div className="banner-content">
               <div className="news-right1">

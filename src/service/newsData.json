@@ -1,0 +1,92 @@
+{
+    "newsItems": [
+      {
+        "id": 1,
+        "category": "NEWS",
+        "title": "Economic reforms boost local markets",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "New economic policies show promising results",
+        "image": "/vector-5.svg",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "category": "CULTURE",
+        "title": "Kairat Nurtas announces new album",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "Popular artist reveals details about upcoming release",
+        "image": "/vector-7.svg",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "category": "BUSINESS",
+        "title": "New automobile factory opens",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "Buy new car opportunities expand with local production",
+        "image": "/vector-8.svg",
+        "featured": false
+      },
+      {
+        "id": 4,
+        "category": "TECHNOLOGY",
+        "title": "Digital transformation in Kazakhstan",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "How technology is changing industries",
+        "image": "/vector-16.svg",
+        "featured": false
+      },
+      {
+        "id": 5,
+        "category": "SPORTS",
+        "title": "National team qualifies for tournament",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "Historic achievement for local athletes",
+        "image": "/news-vector.svg",
+        "featured": false
+      },
+      {
+        "id": 6,
+        "category": "POLITICS",
+        "title": "International relations strengthen",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "Diplomatic efforts yield positive results",
+        "image": "/vector-16.svg",
+        "featured": false
+      },
+      {
+        "id": 7,
+        "category": "HEALTH",
+        "title": "New medical center inaugurated",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "State-of-the-art facility opens to the public",
+        "image": "/news-vector.svg",
+        "featured": false
+      },
+      {
+        "id": 8,
+        "category": "ENTERTAINMENT",
+        "title": "Film festival attracts global talent",
+        "author": "ISMAGULOV Z. MARATULY",
+        "description": "International directors showcase their work",
+        "image": "/vector-6.svg",
+        "featured": true
+      }
+    ],
+    "collections": [
+      {
+        "id": 1,
+        "title": "Ukraine",
+        "description": "Coverage on the ongoing situation",
+        "image": "/vector-6.svg",
+        "newsIds": [1, 3, 5]
+      },
+      {
+        "id": 2,
+        "title": "Technology Trends",
+        "description": "The latest in tech innovation",
+        "image": "/vector-8.svg",
+        "newsIds": [4, 6]
+      }
+    ]
+  }

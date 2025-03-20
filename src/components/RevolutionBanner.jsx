@@ -1,3 +1,4 @@
+import { useNews } from "../service/NewsContext";
 import NEWSBLOCK from "./NEWSBLOCK";
 import Collection from "./Collection/Collection";
 import Component2 from "./Left_Block/Component2";
@@ -8,40 +9,49 @@ import PropTypes from "prop-types";
 import "./RevolutionBanner.css";
 
 function RevolutionBanner({ className = "" }) {
+  const { loading, news } = useNews();
+
+  const topNewsItems = news.slice(0, 3);
+
+  const oneNewsItem = news.slice(3, 4);
+
+  if (loading) {
+    return <div>Loading news content...</div>;
+  }
+
   return (
-      <section className={`revolution-banner ${className}`}>
-          <div className="news-block-container">
-              <div className="twitter-name">
-                  <div className="news4">
-                      <NEWSBLOCK newsVector="/news-vector.svg" />
-
-                      <NEWSBLOCK newsVector="/news-vector.svg" />
-
-                      <NEWSBLOCK newsVector="/news-vector.svg" />
-                  </div>
-              </div>
-
-              <div className="collection-block">
-                  <Collection />
-
-                  <div className="side-news-block1">
-                      <div className="side-news-container1">
-                          <div className="side-news-content2">
-                              <Component2 />
-
-                              <Component3 />
-                          </div>
-
-                          <div className="main-side-news">
-                              <Component4 />
-                          </div>
-                      </div>
-                  </div>
-
-                  <FrameComponent />
-              </div>
+    <section className={`revolution-banner ${className}`}>
+      <div className="news-block-container">
+        <div className="twitter-name">
+          <div className="news4">
+            {topNewsItems.map(item => (
+              <NEWSBLOCK key={item.id} newsId={item.id} />
+            ))}
           </div>
-      </section>
+        </div>
+
+        <div className="collection-block">
+          <Collection collectionId={1} />
+
+          <div className="side-news-block1">
+            <div className="side-news-container1">
+              <div className="side-news-content2">
+                {oneNewsItem.map(item => (
+                  <Component2 key={item.id} newsId={item.id} />
+                ))}
+                <Component3 newsId={6} />
+              </div>
+
+              <div className="main-side-news">
+                <Component4 />
+              </div>
+            </div>
+          </div>
+
+          <FrameComponent />
+        </div>
+      </div>
+    </section>
   );
 }
 

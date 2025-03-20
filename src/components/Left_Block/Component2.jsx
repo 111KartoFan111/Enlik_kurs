@@ -1,7 +1,13 @@
 import PropTypes from "prop-types";
 import "./Component2.css";
+import { useNews } from "../../service/NewsContext";
 
-function Component2({ className = "" }) {
+function Component2({ className = "", newsId }) {
+  const { getNewsById } = useNews();
+  const newsItem = getNewsById(newsId);
+
+  if (!newsItem) return null;
+
   return (
     <div className={`div2 ${className}`}>
       <div className="first-news-container flex-container">
@@ -10,31 +16,17 @@ function Component2({ className = "" }) {
             <div className="first-news-details flex-container">
               <div className="first-news-heading flex-container">
                 <div className="title flex-container">
-                  <h2 className="news text-base">вв</h2>
+                  <h2 className="news text-base">{newsItem.category}</h2>
                   <div className="news-line" />
                 </div>
               </div>
               <div className="first-news-author flex-container">
-                <h1 className="news-title text-base">Kairat Nurtas</h1>
-                <b className="news-author text-base">BY IsOV Z. MARATULY</b>
+                <h1 className="news-title text-base">{newsItem.title}</h1>
+                <b className="news-author text-base">BY {newsItem.author}</b>
               </div>
             </div>
           </div>
-          <img alt="" className="first-news-image" loading="lazy" src="/vector-7.svg" />
-          <div className="second-news-item flex-container">
-            <div className="second-news-details flex-container">
-              <div className="second-news-heading flex-container">
-                <div className="title flex-container">
-                  <h2 className="news text-base">NEWS</h2>
-                  <div className="news-line" />
-                </div>
-              </div>
-              <div className="second-news-author flex-container">
-                <h1 className="news-title text-base">Kairat Nurtas</h1>
-                <b className="news-author text-base">BY ISMAGULOV Z. MARATULY</b>
-              </div>
-            </div>
-          </div>
+          <img alt="" className="first-news-image" loading="lazy" src={newsItem.imageUrl || "/vector-7.svg"} />
         </div>
       </div>
       <img alt="" className="second-news-image" loading="lazy" src="/vector-8.svg" />
@@ -44,6 +36,7 @@ function Component2({ className = "" }) {
 
 Component2.propTypes = {
   className: PropTypes.string,
+  newsId: PropTypes.number.isRequired,
 };
 
 export default Component2;

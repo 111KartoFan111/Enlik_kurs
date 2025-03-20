@@ -1,7 +1,14 @@
 import PropTypes from "prop-types";
+import { useNews } from "../service/NewsContext";
 import "./Main.css";
 
-function Main({ className = "" }) {
+function Main({ className = "", newsId}) {
+    const { getNewsById } = useNews();
+    const newsItem = getNewsById(newsId);
+
+    if (!newsItem) return null;
+
+
   return (
       <div className={`main ${className}`}>
           <img
@@ -24,7 +31,7 @@ function Main({ className = "" }) {
                           />
 
                           <h2 className="israel-the">
-                              ISRAEL & THE MIDDLE FAST
+                            {newsItem.category}
                           </h2>
                       </div>
                   </div>
@@ -32,20 +39,17 @@ function Main({ className = "" }) {
                   <div className="main-article-description">
                       <div className="description-container">
                           <h1 className="their-time-is">
-                              Their Time Is Up
+                          {newsItem.title}
                           </h1>
 
                           <div className="the-murder-of">
-                              The murder of the Bibas children caps off an 18-month catalog of
-                              horrors that has told us exactly who our Palestinian neighbors
-                              are. Backed by a friend in the White House, Israel must secure
-                              its future through strong unilateral action.
+                          {newsItem.description}
                           </div>
                       </div>
 
                       <div className="author-container">
                           <div className="by-liel-leibovitz">
-                              by Liel Leibovitz
+                            BY {newsItem.author}
                           </div>
                       </div>
                   </div>
@@ -57,6 +61,7 @@ function Main({ className = "" }) {
 
 Main.propTypes = {
   className: PropTypes.string,
+  newsId: PropTypes.number.isRequired,
 };
 
 export default Main;

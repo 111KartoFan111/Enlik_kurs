@@ -20,7 +20,7 @@
   white-space: nowrap;
   z-index: 1;
 }
-.by-ismagulov-z1 {
+.author {
   position: absolute;
   top: 127px;
   left: 50px;
@@ -31,7 +31,7 @@
   height: 18px;
   z-index: 1;
 }
-.buy-new-car1 {
+.description {
   margin: 0;
   position: absolute;
   top: 102px;

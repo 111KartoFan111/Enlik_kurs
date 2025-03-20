@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NewsProvider } from "../service/NewsContext";
 import Component1 from "../components/Header";
 import FOOTERBUT from "../components/Footer/Footer_but";
 import CLOSEBUT from "../components/Footer/Close_But";
@@ -20,20 +21,22 @@ function Desktop() {
   };
 
   return (
-    <div className="desktop-1">
-      <Component1 property1="Variant2" />
+    <NewsProvider>
+      <div className="desktop-1">
+        <Component1 property1="Variant2" />
 
-      <FOOTERBUT onToggle={handleToggle} />
-      <Sidebar isOpen={sidebarOpen}>
-        <CLOSEBUT onToggle={handleClose} className="sidebar-close" />
-      </Sidebar>
+        <FOOTERBUT onToggle={handleToggle} />
+        <Sidebar isOpen={sidebarOpen}>
+          <CLOSEBUT onToggle={handleClose} className="sidebar-close" />
+        </Sidebar>
 
-      <main className="frame-parent">
-        <FrameComponent1 />
-        <Subscribe />
-        <RevolutionBanner />
-      </main>
-    </div>
+        <main className="frame-parent">
+          <FrameComponent1 />
+          <Subscribe />
+          <RevolutionBanner />
+        </main>
+      </div>
+    </NewsProvider>
   );
 }
 

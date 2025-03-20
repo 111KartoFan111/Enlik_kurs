@@ -24,7 +24,7 @@ function FrameComponent({ className = "" }) {
                               Kairat Nurtas
                           </h1>
 
-                          <h3 className="buy-new-car3">
+                          <h3 className="description3">
                               Buy new car
                           </h3>
 
@@ -63,7 +63,7 @@ function FrameComponent({ className = "" }) {
                                       Kairat Nurtas
                               </h1>
 
-                                  <h3 className="buy-new-car4">
+                                  <h3 className="description4">
                                       Buy new car
                               </h3>
                               </div>
@@ -102,7 +102,7 @@ function FrameComponent({ className = "" }) {
                               Kairat Nurtas
                           </h1>
 
-                          <h3 className="buy-new-car5">
+                          <h3 className="description5">
                               Buy new car
                           </h3>
                       </div>
@@ -139,7 +139,7 @@ function FrameComponent({ className = "" }) {
                       </div>
 
                       <div className="second-nested-description">
-                          <h3 className="buy-new-car6">
+                          <h3 className="description6">
                               sss
                           </h3>
                       </div>
